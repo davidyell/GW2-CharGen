@@ -2,10 +2,10 @@
 
 $genders = array(
 	'Female'=>array(
-		'icon'=>'http://wiki.guildwars2.com/images/9/99/Female.png'
+		'icon'=>'images/1343398117_Female.png'
 	),
 	'Male'=>array(
-		'icon'=>'http://wiki.guildwars2.com/images/b/b1/Male.png'
+		'icon'=>'images/1343398114_Male.png'
 	)
 );
 
