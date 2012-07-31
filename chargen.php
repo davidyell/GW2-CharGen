@@ -154,6 +154,13 @@ $personalities = array(
   	div.well p img{
   		margin-right: 10px;
   	}
+  	p.youtube{
+  		width: 243px;
+  		margin: 10px auto 0;
+  		text-align: center;
+  		background: url(images/1343730148_youtube.png) no-repeat;
+  		padding-left: 20px;
+  	}
   </style>
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -175,20 +182,24 @@ $personalities = array(
 				$profession = array_rand($professions,1);
 				$personality = array_rand($personalities, 1);
 
-				echo "<p><img style='width:48px;height:48px' src='".$genders[$gender]['icon']."' alt='".$genders[$gender]."'> ".$gender."</p>";
-				echo "<p><img src='".$races[$race]['icon']."' alt='".$races[$race]."'> ".$race."</p>";
-				echo "<p><img src='".$professions[$profession]['icon']."' alt='".$professions[$profession]."'> ".$profession."</p>";
+				echo "<p><img style='width:48px;height:48px' src='".$genders[$gender]['icon']."' alt='".$gender."'> ".$gender."</p>";
+				echo "<p><img src='".$races[$race]['icon']."' alt='".$race."'> ".$race."</p>";
+				echo "<p><img src='".$professions[$profession]['icon']."' alt='".$profession."'> ".$profession."</p>";
 				// echo "<hr>";
 				// echo "<p><img src='".$personalities[$personality]['icon']."' alt='".$personalities[$personality]."'> ".$personality."</p>";
 				// echo "<hr>";
 				?>
 			</div>
 			<?php
-			?><a href="?go" title="Generate character" id="gen-btn">Again,<br>again!</a><?php
+			?>
+			<p class='youtube'><a target="_blank" href="http://www.youtube.com/results?search_query=gw2+<?php echo $gender;?>+<?php echo $race;?>+<?php echo $profession;?>" title="YouTube">Check out your character on YouTube</a></p>
+			<a href="?go" title="Generate character" id="gen-btn">Again,<br>again!</a>
+			<?php
 		}else{
 			?><a href="?go" title="Generate character" id="gen-btn">Make me a character</a><?php
 		}
 		?>
+
 
 		<footer>
 			<p>Created by the DiY Guild.<br><a href=".." title="DiY Guild">www.diyguild.org</a></p>
